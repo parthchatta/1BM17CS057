@@ -4,19 +4,19 @@ class admission:
         self.age=0
         self.marks=0
     def validate_marks(self,marks):
-        if marks>=0 && marks<=100:
+        if marks>=0 and marks<=100:
             return True
         else:
             return False
     
     def validate_age(self,age):
-        if age>20:
+        if age > 20:
             return True
         else:
             return False
     def check_qualification(self,age,marks):
-        if self.validate_marks(marks) && self.validate_age(age):
-            if marks>=65:
+        if self.validate_marks(marks) and self.validate_age(age):
+            if marks >= 65:
                 return True
             else:
                 return False
